@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload an Image</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Upload Your Image</h1>
+    <p>Select an image to convert to grayscale.</p>
+    
+    <!-- Image upload form -->
+    <div class="upload-box">
+      <input type="file" id="imageUpload" accept="image/*" onchange="previewImage(event)">
+      <label for="imageUpload" class="upload-label">
+        <i class="fas fa-cloud-upload-alt"></i>
+        Choose an Image
+      </label>
+      <img id="imagePreview" class="image-preview" src="#" alt="Image Preview" style="display:none;" />
+    </div>
+
+    <!-- Button to submit the image -->
+    <button id="uploadButton" onclick="uploadImage()">Upload Image</button>
+  </div>
+
+  <!-- Include Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
